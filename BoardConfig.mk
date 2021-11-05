@@ -58,6 +58,9 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/properties/vendor.prop
 # Screen density
 TARGET_SCREEN_DENSITY := 395
 
+# Power
+TARGET_POWERHAL_MODE_EXT := $(DEVICE_PATH)/power/power-mode.cpp
+
 # Permissive
 #BOARD_BOOTCONFIG += androidboot.selinux=permissive
 
