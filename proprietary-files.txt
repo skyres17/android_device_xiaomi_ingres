@@ -9,8 +9,8 @@
 
 
 # ACDB
-vendor/etc/acdbdata/Mise_elus/Mise_elus_acdb_cal.acdb
-vendor/etc/acdbdata/Mise_elus/Mise_elus_workspaceFileXml.qwsp
+vendor/etc/acdbdata/Mise/Mise_acdb_cal.acdb
+vendor/etc/acdbdata/Mise/Mise_workspaceFileXml.qwsp
 
 # ADSP modules
 vendor/lib/rfsa/adsp/bm2n00.bin
@@ -55,14 +55,12 @@ vendor/lib/rfsa/adsp/libhdr_cdsp_skel.so
 vendor/lib/rfsa/adsp/libmialgo_basic_cdsp_skel.so
 vendor/lib/rfsa/adsp/libmialgo_ldc_cdsp_skel.so
 vendor/lib/rfsa/adsp/libmialgo_low_light_align_cdsp_skel.so
-vendor/lib/rfsa/adsp/libmialgo_mc_bokeh_cdsp_skel.so
 vendor/lib/rfsa/adsp/libmialgo_mfnr_cdsp_skel.so
 vendor/lib/rfsa/adsp/libmialgo_pureview_cdsp_skel.so
 vendor/lib/rfsa/adsp/libmialgo_rfs_cdsp_skel.so
 vendor/lib/rfsa/adsp/libmialgo_sfnr_cdsp_skel.so
 vendor/lib/rfsa/adsp/libmobilenet_dsp_frc.so
 vendor/lib/rfsa/adsp/libmobilenet_dsp_frc_networks.so
-vendor/lib/rfsa/adsp/libproxy_skel.so
 vendor/lib/rfsa/adsp/libqvr_cam_dsp_driver_skel.so
 vendor/lib/rfsa/adsp/libqvr_dsp_driver_skel.so
 vendor/lib/rfsa/adsp/libscveT2T_skel.so
@@ -91,10 +89,14 @@ vendor/etc/usecaseKvManager.xml
 
 # Audio
 vendor/lib64/hw/audio.primary.taro.so;DISABLE_CHECKELF
+vendor/lib/hw/audio.primary.taro.so;DISABLE_CHECKELF
 vendor/lib64/libagm.so
+vendor/lib/libagm.so
 vendor/lib64/libar-pal.so;DISABLE_CHECKELF
+vendor/lib/libar-pal.so;DISABLE_CHECKELF
 vendor/lib64/libcrussp.so;DISABLE_CHECKELF
 vendor/lib64/libkaraokepal.so
+vendor/lib/libkaraokepal.so
 
 # Audio firmware
 vendor/firmware/BH-cs35l41-dsp1-spk-cali.bin
@@ -144,15 +146,11 @@ vendor/etc/camera/125_Latin.png
 vendor/etc/camera/126_Fantasy2.png
 vendor/etc/camera/127_Creamy.png
 vendor/etc/camera/128_Sepia.png
-vendor/etc/camera/CFR_para_T_2x_V01.bin
-vendor/etc/camera/CFR_para_T_2x_V01_HD.bin
-vendor/etc/camera/CFR_para_T_2x_V01_SN.bin
-vendor/etc/camera/CFR_para_UW_V01.bin
-vendor/etc/camera/CFR_para_UW_V01_HD.bin
-vendor/etc/camera/CFR_para_UW_V01_SN.bin
+vendor/etc/camera/CFR_para_UW_V010.bin
+vendor/etc/camera/CFR_para_UW_V010_HD.bin
+vendor/etc/camera/CFR_para_UW_V010_SN.bin
 vendor/etc/camera/CFR_para_W_V01.bin
-vendor/etc/camera/CFR_para_W_V01_HD.bin
-vendor/etc/camera/CFR_para_W_V01_SN.bin
+vendor/etc/camera/CFR_para_W_V01_4x.bin
 vendor/etc/camera/GpuKernelRepo.pb
 vendor/etc/camera/MILDC_CALIB_0x01.bin
 vendor/etc/camera/MILDC_CAPTURE_PARAMS.json
@@ -170,7 +168,6 @@ vendor/etc/camera/ai_enhance.dlc
 vendor/etc/camera/aivsModels1
 vendor/etc/camera/aivsModels2
 vendor/etc/camera/aivsParams
-vendor/etc/camera/arcsat_3sat.bin
 vendor/etc/camera/beauty_style_blue.cng
 vendor/etc/camera/beauty_style_masculine.cng
 vendor/etc/camera/beauty_style_neutral.cng
@@ -182,20 +179,14 @@ vendor/etc/camera/cache
 vendor/etc/camera/calibration.bin
 vendor/etc/camera/camxoverridesettings.txt
 vendor/etc/camera/camxoverridesettingsOfCloseLog.txt
-vendor/etc/camera/com.xiaomi.dcal.wt.golden
 vendor/etc/camera/com.xiaomi.dcal.wu.golden
-vendor/etc/camera/com.xiaomi.dcallite.wt.data
-vendor/etc/camera/com.xiaomi.dcallite.wu.data
 vendor/etc/camera/deblur_sd_opencl_binary.bin
 vendor/etc/camera/deblur_sd_opencl_params.bin
 vendor/etc/camera/deblur_txt_dsp.dlc
 vendor/etc/camera/deblur_txt_gpu.dlc
-vendor/etc/camera/dualcam_bokeh_params.json
-vendor/etc/camera/eisoverridesettings.txt
+vendor/etc/camera/preview_bokeh_params.json
 vendor/etc/camera/ellc.bin
 vendor/etc/camera/ellc_params.json
-vendor/etc/camera/ellv.bin
-vendor/etc/camera/ellv_params.xml
 vendor/etc/camera/hdrcheckerparamsettings.yml
 vendor/etc/camera/his_conf_preview.yaml
 vendor/etc/camera/his_conf_video.yaml
@@ -212,7 +203,8 @@ vendor/etc/camera/model_front.dlc
 vendor/etc/camera/model_front_mibokeh_video.dlc
 vendor/etc/camera/model_glass.dlc
 vendor/etc/camera/preview_bokeh_params.json
-vendor/etc/camera/preview_bokeh_params_pro.json
+vendor/etc/camera/ingres_enhance_motiontuning.xml
+vendor/etc/camera/ingres_motiontuning.xml
 vendor/etc/camera/pureShot_parameter.xml
 vendor/etc/camera/pureView_parameter.xml
 vendor/etc/camera/qianzhi_27_snpe1_55.dlc
@@ -466,8 +458,6 @@ vendor/etc/camera/xiaomi/thirdpartyjpegsnapshot.json
 vendor/etc/camera/xiaomi/thirdpartyrawsupernightjpeg.json
 vendor/etc/camera/xiaomi/thirdpartyrawsupernightyuv.json
 vendor/etc/camera/xiaomi/thirdpartysnapshot.json
-vendor/etc/camera/zeus_enhance_motiontuning.xml
-vendor/etc/camera/zeus_motiontuning.xml
 vendor/etc/init/vendor.qti.camera.provider@2.7-service_64.rc
 vendor/etc/vintf/manifest/vendor.xiaomi.hardware.quickcamera@1.0-service.xml
 vendor/lib64/camera/com.qti.tuned.default.bin
@@ -553,7 +543,6 @@ vendor/lib64/camera/components/com.xiaomi.node.mifilter.so
 vendor/lib64/camera/components/com.xiaomi.node.misegment.so
 vendor/lib64/camera/components/com.xiaomi.node.misv2.so
 vendor/lib64/camera/components/com.xiaomi.node.misv3.so
-vendor/lib64/camera/components/com.xiaomi.node.smooth_transition.so
 vendor/lib64/camera/components/libdepthmapwrapper_secure.so
 vendor/lib64/camera/fdconfigpreview.bin
 vendor/lib64/camera/fdconfigpreviewlite.bin
@@ -656,12 +645,7 @@ vendor/lib64/libalCFR.so
 vendor/lib64/libanc_dc_base.so
 vendor/lib64/libanc_hdr.so
 vendor/lib64/libancbase.so
-vendor/lib64/libarc_sat.so
-vendor/lib64/libarc_translate.so
-vendor/lib64/libarccali_data.so
 vendor/lib64/libarcsoft_beautyshot.so
-vendor/lib64/libarcsoft_dualcam_refocus_image.so
-vendor/lib64/libarcsoft_dualcam_refocus_video.so
 vendor/lib64/libarcsoft_qnnhtp.so
 vendor/lib64/libarcsoft_super_night_raw.so
 vendor/lib64/libbeauty_face_interface.so
@@ -696,8 +680,6 @@ vendor/lib64/libcom.xiaomi.metadatautils.so
 vendor/lib64/libcom.xiaomi.pluginutils.so
 vendor/lib64/libcvface_api.so
 vendor/lib64/libdeflicker.so
-vendor/lib64/libdualcam_optical_zoom_control.so
-vendor/lib64/libdualcam_video_optical_zoom.so
 vendor/lib64/libellv.so
 vendor/lib64/libhdr10plus.so
 vendor/lib64/libhexagon_controller.so
@@ -708,7 +690,6 @@ vendor/lib64/libipebpsstriping480.so
 vendor/lib64/libjpege.so
 vendor/lib64/libmctfengine_stub.so
 vendor/lib64/libmfGhostDetection.so
-vendor/lib64/libmiStereoFactoryRemapBasicLib.so
 vendor/lib64/libmiai_deblur.so
 vendor/lib64/libmiai_portraitsupernight.so
 vendor/lib64/libmialgo_ai_vision.so
@@ -731,9 +712,7 @@ vendor/lib64/libmialgo_video_seg_depth.so
 vendor/lib64/libmialgoengine.so
 vendor/lib64/libmibokeh_845_video.so
 vendor/lib64/libmibokeh_855.so
-vendor/lib64/libmibokeh_mask.so
 vendor/lib64/libmibokeh_mask_dsp.so
-vendor/lib64/libmiphone_capture_bokeh.so
 vendor/lib64/libmiphone_capture_ldc.so
 vendor/lib64/libmiphone_preview_bokeh.so
 vendor/lib64/libmiphone_preview_ldc.so
@@ -760,7 +739,6 @@ vendor/lib64/libquickcamera.so
 vendor/lib64/librelight_only.so
 vendor/lib64/libremosaic_wrapper.so
 vendor/lib64/libremosaiclib.so
-vendor/lib64/librmsclib1.so
 vendor/lib64/libsdk_sr.so
 vendor/lib64/libsfeShiftExtrapolation.so
 vendor/lib64/libsnpe_dsp_domains_v2.so
@@ -770,8 +748,7 @@ vendor/lib64/libswregistrationalgo.so
 vendor/lib64/libsynx.so
 vendor/lib64/libtfestriping.so
 vendor/lib64/libthreadutils.so
-vendor/lib64/libtriplecam_optical_zoom_control.so
-vendor/lib64/libtriplecam_video_optical_zoom.so
+
 vendor/lib64/libubifocus.so
 vendor/lib64/libvideoBokeh.so
 vendor/lib64/libvideofilter_only.so
@@ -823,30 +800,24 @@ vendor/firmware/CAMERA_ICP.mbn
 vendor/firmware/CAMERA_ICP.mdt
 vendor/firmware/CAMERA_ICP_170.elf
 vendor/firmware/CAMERA_ICP_480.elf
-vendor/firmware/zeus_wide_bu24618_ois.coeff
-vendor/firmware/zeus_wide_bu24618_ois.mem
-vendor/firmware/zeus_wide_bu24618_ois.prog
 
 # Camera sensors
-vendor/lib64/camera/com.qti.actuator.zeus_semco_imx707_ak7314_wide_actuator.so
-vendor/lib64/camera/com.qti.actuator.zeus_sunny_s5kjn1_dw9714_tele_actuator.so
-vendor/lib64/camera/com.qti.eeprom.zeus_ofilm_ov32b40_p24c64f_front_eeprom.so
-vendor/lib64/camera/com.qti.eeprom.zeus_semco_imx707_p24c128f_wide_eeprom.so
-vendor/lib64/camera/com.qti.eeprom.zeus_sunny_s5kjn1_bl24sa128b_ultra_eeprom.so
-vendor/lib64/camera/com.qti.eeprom.zeus_sunny_s5kjn1_gt24p128e_tele_eeprom.so
-vendor/lib64/camera/com.qti.ois.zeus_wide_bu24618_ois.so
-vendor/lib64/camera/com.qti.sensor.zeus_ofilm_ov32b40_front.so
-vendor/lib64/camera/com.qti.sensor.zeus_semco_imx707_wide.so
-vendor/lib64/camera/com.qti.sensor.zeus_sunny_s5kjn1_tele.so
-vendor/lib64/camera/com.qti.sensor.zeus_sunny_s5kjn1_ultra.so
-vendor/lib64/camera/com.qti.sensormodule.zeus_ofilm_ov32b40_front.bin
-vendor/lib64/camera/com.qti.sensormodule.zeus_semco_imx707_wide.bin
-vendor/lib64/camera/com.qti.sensormodule.zeus_sunny_s5kjn1_tele.bin
-vendor/lib64/camera/com.qti.sensormodule.zeus_sunny_s5kjn1_ultra.bin
-vendor/lib64/camera/com.qti.tuned.zeus_ofilm_ov32b40_front.bin
-vendor/lib64/camera/com.qti.tuned.zeus_semco_imx707_wide.bin
-vendor/lib64/camera/com.qti.tuned.zeus_sunny_s5kjn1_tele.bin
-vendor/lib64/camera/com.qti.tuned.zeus_sunny_s5kjn1_ultra.bin
+vendor/lib64/camera/com.qti.eeprom.ingres_ofilm_gc02m1_bl24sa64_macro_eeprom.so
+vendor/lib64/camera/com.qti.eeprom.ingres_aac_ov8856_gt24p64e_ultra_eeprom.so
+vendor/lib64/camera/com.qti.eeprom.ingres_sunny_imx596_gt24p64e_front_eeprom.so
+vendor/lib64/camera/com.qti.eeprom.ingres_sunny_imx686_gt24p128e_wide_eeprom.so
+vendor/lib64/camera/com.qti.sensor.ingres_aac_ov8856_ultra.so
+vendor/lib64/camera/com.qti.sensor.ingres_ofilm_gc02m1_macro.so
+vendor/lib64/camera/com.qti.sensor.ingres_sunny_imx596_front.so
+vendor/lib64/camera/com.qti.sensor.ingres_sunny_imx686_wide.so
+vendor/lib64/camera/com.qti.sensormodule.ingres_aac_ov8856_ultra.bin
+vendor/lib64/camera/com.qti.sensormodule.ingres_ofilm_gc02m1_macro.bin
+vendor/lib64/camera/com.qti.sensormodule.ingres_sunny_imx596_front.bin
+vendor/lib64/camera/com.qti.sensormodule.ingres_sunny_imx686_wide.bin
+vendor/lib64/camera/com.qti.tuned.ingres_aac_ov8856_ultra.bin
+vendor/lib64/camera/com.qti.tuned.ingres_ofilm_gc02m1_macro.bin
+vendor/lib64/camera/com.qti.tuned.ingres_sunny_imx596_front.bin
+vendor/lib64/camera/com.qti.tuned.ingres_sunny_imx686_wide.bin
 vendor/lib64/hw/com.qti.chi.override.so
 
 # Computer vision firmware
@@ -905,17 +876,14 @@ vendor/firmware/evautil64.b07
 vendor/firmware/evautil64.mdt
 
 # Display configs
-product/etc/displayconfig/display_id_4630947134992368258.xml:vendor/etc/displayconfig/display_id_4630947134992368258.xml
-vendor/etc/display/qdcm_calib_data_xiaomi_38_0c_0a_cmd_mode_dsc_dsi_panel.json
-vendor/etc/mdss_dsi_l2_38_0c_0a_dsc_cmd_mi.xml
+product/etc/displayconfig/display_id_4630946545580055170.xml:vendor/etc/displayconfig/display_id_4630946545580055170.xml
+vendor/etc/display/qdcm_calib_data_xiaomi_42_02_0a_mp_cmd_mode_dsc_dsi_panel.json
+vendor/etc/mdss_dsi_l10_42_02_0a_dsc_cmd_mi.xml
 
 # Fingerprint
-vendor/lib64/hw/fingerprint.goodix_fod.so:vendor/lib64/hw/fingerprint.goodix_fod.default.so;FIX_SONAME
-vendor/lib64/hw/fingerprint.goodix_fod6.so:vendor/lib64/hw/fingerprint.goodix_fod6.default.so;FIX_SONAME
-vendor/lib64/libarm_proxy_skel.so
+vendor/lib64/hw/fingerprint.fpc.so:vendor/lib64/hw/fingerprint.fpc.default.so;FIX_SONAME
+vendor/lib64/hw/fingerprint.goodix.so:vendor/lib64/hw/fingerprint.goodix.default.so;FIX_SONAME
 vendor/lib64/libgf_hal.so
-vendor/lib64/libgf_hal6.so
-vendor/lib64/libhvx_proxy_stub.so
 
 # Graphics (Adreno firmware)
 vendor/firmware/a730_sqe.fw
@@ -936,24 +904,18 @@ vendor/etc/libnfc-nxp_RF.conf:vendor/libnfc-nxp_RF.conf
 vendor/etc/sensors/calibratedCheck.json
 vendor/etc/sensors/config/ak991x_dri_0.json
 vendor/etc/sensors/config/bmp285_0.json
-vendor/etc/sensors/config/bu27030_0_back.json
-vendor/etc/sensors/config/fs203.json
-vendor/etc/sensors/config/gs1602.json
-vendor/etc/sensors/config/lsm6dso_0.json
+vendor/etc/sensors/config/icm4x6xx_0.json
 vendor/etc/sensors/config/qsh_camera.json
 vendor/etc/sensors/config/sm8450_ak991x_0.json
 vendor/etc/sensors/config/sm8450_bmp285_0.json
-vendor/etc/sensors/config/sm8450_bu27030_0_back.json
 vendor/etc/sensors/config/sm8450_dynamic_sensors.json
-vendor/etc/sensors/config/sm8450_fs203.json
-vendor/etc/sensors/config/sm8450_gs1602.json
+vendor/etc/sensors/config/sm8450_icm4x6xx_0.json
 vendor/etc/sensors/config/sm8450_irq.json
-vendor/etc/sensors/config/sm8450_lsm6dso_0.json
 vendor/etc/sensors/config/sm8450_power_0.json
 vendor/etc/sensors/config/sm8450_sx932x_0.json
-vendor/etc/sensors/config/sm8450_sx933x_0.json
+vendor/etc/sensors/config/sm8450_sx932x_1.json
 vendor/etc/sensors/config/sm8450_tcs3408.json
-vendor/etc/sensors/config/sm8450_tmd3719.json
+vendor/etc/sensors/config/sm8450_tcs3701.json
 vendor/etc/sensors/config/sns_amd.json
 vendor/etc/sensors/config/sns_amd_sw_disabled.json
 vendor/etc/sensors/config/sns_amd_sw_enabled.json
@@ -998,11 +960,10 @@ vendor/etc/sensors/config/sns_tilt_sw_enabled.json
 vendor/etc/sensors/config/sns_tilt_to_wake.json
 vendor/etc/sensors/config/sns_wrist_pedo.json
 vendor/etc/sensors/config/sx932x_0.json
-vendor/etc/sensors/config/sx933x_0.json
+vendor/etc/sensors/config/sx932x_1.json
 vendor/etc/sensors/config/tcs3408.json
-vendor/etc/sensors/config/tmd3719.json
+vendor/etc/sensors/config/tcs3701.json
 vendor/etc/sensors/hals.conf
-vendor/etc/sensors/sensorDisplayMap.json
 vendor/etc/sensors/sns_reg_config
 
 # Sensors - SSC calibration
@@ -1010,7 +971,6 @@ vendor/lib64/libssccalapi@2.0.so
 
 # Thermal engine
 vendor/etc/thermal-4k.conf
-vendor/etc/thermal-abnormal.conf
 vendor/etc/thermal-arvr.conf
 vendor/etc/thermal-camera.conf
 vendor/etc/thermal-chg-only.conf
@@ -1019,29 +979,31 @@ vendor/etc/thermal-engine.conf
 vendor/etc/thermal-hp-mgame.conf
 vendor/etc/thermal-hp-normal.conf
 vendor/etc/thermal-huanji.conf
-vendor/etc/thermal-iec-4k.conf
-vendor/etc/thermal-iec-camera.conf
-vendor/etc/thermal-iec-chg-only.conf
-vendor/etc/thermal-iec-class0.conf
-vendor/etc/thermal-iec-huanji.conf
-vendor/etc/thermal-iec-mgame.conf
-vendor/etc/thermal-iec-navigation.conf
-vendor/etc/thermal-iec-nolimits.conf
-vendor/etc/thermal-iec-normal.conf
-vendor/etc/thermal-iec-per-class0.conf
-vendor/etc/thermal-iec-per-navigation.conf
-vendor/etc/thermal-iec-per-normal.conf
-vendor/etc/thermal-iec-per-video.conf
-vendor/etc/thermal-iec-phone.conf
-vendor/etc/thermal-iec-tgame.conf
-vendor/etc/thermal-iec-video.conf
-vendor/etc/thermal-iec-videochat.conf
+vendor/etc/thermal-india-4k.conf
+vendor/etc/thermal-india-camera.conf
+vendor/etc/thermal-india-class0.conf
+vendor/etc/thermal-india-huanji.conf
+vendor/etc/thermal-india-mgame.conf
+vendor/etc/thermal-india-navigation.conf
+vendor/etc/thermal-india-nolimits.conf
+vendor/etc/thermal-india-normal.conf
+vendor/etc/thermal-india-per-camera.conf
+vendor/etc/thermal-india-per-class0.conf
+vendor/etc/thermal-india-per-navigation.conf
+vendor/etc/thermal-india-per-normal.conf
+vendor/etc/thermal-india-per-video.conf
+vendor/etc/thermal-india-phone.conf
+vendor/etc/thermal-india-tgame.conf
+vendor/etc/thermal-india-video.conf
+vendor/etc/thermal-india-videochat.conf
+vendor/etc/thermal-india-yuanshen.conf
 vendor/etc/thermal-l18a-map.conf
 vendor/etc/thermal-map.conf
 vendor/etc/thermal-mgame.conf
 vendor/etc/thermal-navigation.conf
 vendor/etc/thermal-nolimits.conf
 vendor/etc/thermal-normal.conf
+vendor/etc/thermal-per-camera.conf
 vendor/etc/thermal-per-class0.conf
 vendor/etc/thermal-per-navigation.conf
 vendor/etc/thermal-per-normal.conf
@@ -1051,11 +1013,13 @@ vendor/etc/thermal-region-map.conf
 vendor/etc/thermal-tgame.conf
 vendor/etc/thermal-video.conf
 vendor/etc/thermal-videochat.conf
+vendor/etc/thermal-yuanshen.conf
 vendor/etc/thermald-devices.conf
 
-# Touchscreen - from thor V816.0.10.0.ULACNXM
-vendor/firmware/st_fts_l1.ftb|f258868a54503e0ad74d8b360a8501274c10ab9d
-vendor/firmware/stm_fts_production_limits.csv|437fa1af33da23ef94107f07239435092baf58a8
+# Touchscreen - from ingres V816.0.5.0.ULACNXM
+vendor/firmware/st_fts_l10.ftb
+vendor/firmware/st_fts_l10_thp.ftb
+vendor/firmware/stm_fts_production_limits.csv
 
 # Vibrator
 vendor/firmware/aw8697_haptic.bin

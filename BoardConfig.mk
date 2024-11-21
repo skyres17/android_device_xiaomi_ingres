@@ -8,28 +8,43 @@
 include device/xiaomi/sm8450-common/BoardConfigCommon.mk
 
 # Inherit from the proprietary version
-include vendor/xiaomi/zeus/BoardConfigVendor.mk
+include vendor/xiaomi/ingres/BoardConfigVendor.mk
 
-DEVICE_PATH := device/xiaomi/zeus
+BUILD_BROKEN_DUP_RULES := true
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+BUILD_BROKEN_INCORRECT_PARTITION_IMAGES := true
 
-# Kernel
-device_second_stage_modules := \
-    goodix_fod.ko \
-    qcom_pm8008-regulator.ko \
-    fts_touch_spi.ko \
-    aw8697-haptic.ko
+DEVICE_PATH := device/xiaomi/ingres
+KERNEL_PATH := device/xiaomi/ingres-kernel
 
-device_vendor_dlkm_exclusive_modules := \
-    cs35l41_dlkm.ko
+# Kernel prebuilt
+BOARD_USES_DT := true
+BOARD_PREBUILT_DTBIMAGE_DIR := $(KERNEL_PATH)/dtbs
+BOARD_PREBUILT_DTBOIMAGE := $(KERNEL_PATH)/dtbs/dtbo.img
 
-BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD += $(device_second_stage_modules)
-BOARD_VENDOR_KERNEL_MODULES_LOAD += $(device_second_stage_modules) $(device_vendor_dlkm_exclusive_modules)
+TARGET_FORCE_PREBUILT_KERNEL := true
+TARGET_KERNEL_SOURCE := $(KERNEL_PATH)/kernel-headers
+TARGET_NO_KERNEL_OVERRIDE := true
+TARGET_PREBUILT_KERNEL := $(KERNEL_PATH)/kernel
 
-BOOT_KERNEL_MODULES += $(device_second_stage_modules)
+PRODUCT_COPY_FILES += $(TARGET_PREBUILT_KERNEL):kernel
+
+BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(KERNEL_PATH)/modules.load.vndr_dlkm))
+BOARD_VENDOR_KERNEL_MODULES_BLOCKLIST_FILE :=  $(KERNEL_PATH)/modules.blocklist.vndr_dlkm
+BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := $(strip $(shell cat  $(KERNEL_PATH)/modules.load.vndr_rmdsk))
+BOARD_VENDOR_RAMDISK_KERNEL_MODULES_BLOCKLIST_FILE := $(KERNEL_PATH)/modules.blocklist.vndr_rmdsk
+BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(strip $(shell cat $(KERNEL_PATH)/modules.load.recovery))
+
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(KERNEL_PATH)/vendor_dlkm/,$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules) \
+    $(call find-copy-subdir-files,*,$(KERNEL_PATH)/vendor_ramdisk/,$(TARGET_COPY_OUT_VENDOR_RAMDISK)/lib/modules)  
 
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/properties/system.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/properties/vendor.prop
 
 # Screen density
-TARGET_SCREEN_DENSITY := 560
+TARGET_SCREEN_DENSITY := 395
+
+# Permissive
+BOARD_BOOTCONFIG += androidboot.selinux=permissive
