@@ -88,15 +88,11 @@ vendor/etc/microphone_characteristics.xml
 vendor/etc/usecaseKvManager.xml
 
 # Audio
-vendor/lib64/hw/audio.primary.taro.so;DISABLE_CHECKELF
-vendor/lib/hw/audio.primary.taro.so;DISABLE_CHECKELF
+vendor/lib64/hw/audio.primary.taro.so:vendor/lib64/hw/audio.primary.taro-ingres.so;DISABLE_CHECKELF
 vendor/lib64/libagm.so
-vendor/lib/libagm.so
 vendor/lib64/libar-pal.so;DISABLE_CHECKELF
-vendor/lib/libar-pal.so;DISABLE_CHECKELF
 vendor/lib64/libcrussp.so;DISABLE_CHECKELF
 vendor/lib64/libkaraokepal.so
-vendor/lib/libkaraokepal.so
 
 # Audio firmware
 vendor/firmware/BH-cs35l41-dsp1-spk-cali.bin
@@ -884,6 +880,8 @@ vendor/etc/mdss_dsi_l10_42_02_0a_dsc_cmd_mi.xml
 vendor/lib64/hw/fingerprint.fpc.so:vendor/lib64/hw/fingerprint.fpc.default.so;FIX_SONAME
 vendor/lib64/hw/fingerprint.goodix.so:vendor/lib64/hw/fingerprint.goodix.default.so;FIX_SONAME
 vendor/lib64/libgf_hal.so
+vendor/lib64/libgf_ca.so
+vendor/lib64/libgoodixhwfingerprint.so
 
 # Graphics (Adreno firmware)
 vendor/firmware/a730_sqe.fw
@@ -1039,3 +1037,8 @@ vendor/firmware/vpu20_4v.b18
 vendor/firmware/vpu20_4v.b19
 vendor/firmware/vpu20_4v.mbn
 vendor/firmware/vpu20_4v.mdt
+
+# MISC
+vendor/lib64/libwa_rtdof.so
+vendor/lib64/libwa_refocus.so
+vendor/lib64/libwa_depth.so
