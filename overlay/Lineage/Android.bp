@@ -5,6 +5,6 @@
 //
 
 runtime_resource_overlay {
-    name: "LineageResZeus",
+    name: "LineageResIngres",
     device_specific: true,
 }

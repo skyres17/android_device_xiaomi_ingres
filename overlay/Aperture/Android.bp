@@ -5,6 +5,6 @@
 //
 
 runtime_resource_overlay {
-    name: "ApertureResZeus",
+    name: "ApertureResIngres",
     device_specific: true,
 }

@@ -1,9 +1,9 @@
 Copyright (C) 2022-2023 The LineageOS Project
 
-Device configuration for Xiaomi 12 Pro
+Device configuration for POCO F4 GT
 =========================================
 
-The Xiaomi 12 Pro (codenamed _"zeus"_) is a high-end smartphone from Xiaomi.
+The POCO F4 GT (codenamed _"ingres"_) is a high-end smartphone from Xiaomi.
 
 It was globally released in March 2022.
 
@@ -21,4 +21,4 @@ Front camera | 32MP in-display
 
 ## Device picture
 
-![Xiaomi 12 Pro](https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1646293765.11623978.png "Xiaomi 12 Pro in blue")
+![POCO F4 GT](https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1646293765.11623978.png "POCO F4 GT in blue")

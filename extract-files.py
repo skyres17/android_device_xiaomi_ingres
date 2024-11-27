@@ -40,8 +40,8 @@ lib_fixups: lib_fixups_user_type = {
 
 blob_fixups: blob_fixups_user_type = {
     (
-        'vendor/etc/camera/zeus_enhance_motiontuning.xml',
-        'vendor/etc/camera/zeus_motiontuning.xml',
+        'vendor/etc/camera/ingres_enhance_motiontuning.xml',
+        'vendor/etc/camera/ingres_motiontuning.xml',
     ): blob_fixup().regex_replace('xml=version', 'xml version'),
     (
         'vendor/etc/camera/pureShot_parameter.xml',
@@ -54,7 +54,7 @@ blob_fixups: blob_fixups_user_type = {
 }
 
 module = ExtractUtilsModule(
-    'zeus',
+    'ingres',
     'xiaomi',
     blob_fixups=blob_fixups,
     lib_fixups=lib_fixups,

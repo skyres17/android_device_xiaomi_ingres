@@ -12,14 +12,14 @@ $(call inherit-product, vendor/xiaomi/ingres/ingres-vendor.mk)
 
 # Overlay
 PRODUCT_PACKAGES += \
-    ApertureResZeus \
-    FrameworksResZeus \
-    LineageResZeus \
-    NfcResZeus \
-    SettingsProviderResZeus \
-    SettingsResZeus \
-    SystemUIResZeus \
-    WifiResZeus
+    ApertureResIngres \
+    FrameworksResIngres \
+    LineageResIngres \
+    NfcResIngres \
+    SettingsProviderResIngres \
+    SettingsResIngres \
+    SystemUIResIngres \
+    WifiResIngres
 
 # Powershare
 PRODUCT_PACKAGES += \

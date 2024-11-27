@@ -5,6 +5,6 @@
 //
 
 runtime_resource_overlay {
-    name: "SystemUIResZeus",
+    name: "SystemUIResIngres",
     device_specific: true,
 }
