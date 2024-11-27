@@ -47,4 +47,4 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/properties/vendor.prop
 TARGET_SCREEN_DENSITY := 395
 
 # Permissive
-BOARD_BOOTCONFIG += androidboot.selinux=permissive
+#BOARD_BOOTCONFIG += androidboot.selinux=permissive
