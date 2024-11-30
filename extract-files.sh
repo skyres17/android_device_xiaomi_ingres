@@ -25,7 +25,11 @@ function blob_fixup() {
             ;;
         vendor/lib64/libkaraokepal.so)
             [ "$2" = "" ] && return 0
-            "${PATCHELF_0_17_2}" --replace-needed "audio.primary.taro.so" "audio.primary.taro-marble.so" "${2}"
+            "${PATCHELF_0_17_2}" --replace-needed "audio.primary.taro.so" "audio.primary.taro-ingres.so" "${2}"
+            ;;
+        vendor/lib64/hw/audio.primary.taro-marble.so)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF_0_17_2}" --replace-needed "libstagefright_foundation.so" "libstagefright_foundation-v33.so" "${2}"
             ;;
         *)
             return 1
