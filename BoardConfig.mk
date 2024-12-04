@@ -10,12 +10,18 @@ include device/xiaomi/sm8450-common/BoardConfigCommon.mk
 # Inherit from the proprietary version
 include vendor/xiaomi/ingres/BoardConfigVendor.mk
 
+# Inherit from proprietary files for miuicamera
+-include device/xiaomi/miuicamera-ingres/BoardConfig.mk
+
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 BUILD_BROKEN_INCORRECT_PARTITION_IMAGES := true
 
 DEVICE_PATH := device/xiaomi/ingres
 KERNEL_PATH := device/xiaomi/ingres-kernel
+
+# Camera - Miui
+TARGET_CAMERA_PACKAGE_NAME := com.android.camera
 
 # Kernel prebuilt
 BOARD_USES_DT := true
