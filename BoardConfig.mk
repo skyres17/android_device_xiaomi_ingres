@@ -60,3 +60,6 @@ TARGET_SCREEN_DENSITY := 395
 
 # Permissive
 #BOARD_BOOTCONFIG += androidboot.selinux=permissive
+
+# Capacity mAh
+BOARD_BATTERY_CAPACITY := 4700
