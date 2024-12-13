@@ -8,3 +8,39 @@ ro.vendor.sensors.notifier.light_sensors.primary=5,33171089
 persist.vendor.fingerprint.type=side
 persist.vendor.fingerprint.sensor_location=1080|920|210|local:4630946370515662722,1080|920|210|local:4630946480857061762
 
+# Dex2oat
+pm.dexopt.boot=verify
+pm.dexopt.bg-dexopt=everything
+pm.dexopt.first-boot=quicken
+pm.dexopt.install=speed-profile
+dalvik.vm.image-dex2oat-filter=speed
+dalvik.vm.image-dex2oat-threads=8
+dalvik.vm.dex2oat-filter=speed
+dalvik.vm.dex2oat-threads=8
+dalvik.vm.dex2oat64.enabled=true
+
+# Netflix
+vendor.netflix.bsp_rev=Q6115-31409-1
+
+# Touch Hax 
+touch.size.scale=1
+touch.size.bias=0
+touch.size.isSummed=0
+touch.pressure.scale=0.001
+touch.distance.calibration=none
+touch.distance.scale=0
+touch.coverage.calibration=box
+touch.gestureMode=spots
+MultitouchSettleInterval=1ms
+MultitouchMinDistance=1px
+TapInterval=1ms
+TapSlop=1px
+
+# Fling
+ro.min.fling_velocity=160
+ro.max.fling_velocity=20000
+ro.max.fling_velocity=20000
+ro.vendor.qti.cgroup_follow.enable=true
+persist.vendor.qti.inputopts.enable=true
+persist.vendor.qti.inputopts.movetouchslop=0.6
+ro.qcom.adreno.qgl.ShaderStorageImageExtendedFormats=0
