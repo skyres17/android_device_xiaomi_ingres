@@ -6,12 +6,18 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Whether to show Smooth Display feature in Settings Options -->
     <bool name="config_show_smooth_display">true</bool>
-    <!-- Whether to show min refresh rate in display settings -->
-    <bool name="config_show_min_refresh_rate_switch">true</bool>
     <!-- Whether device supports double tap to wake -->
     <bool name="config_supportDoubleTapWake">true</bool>
     <!-- Control whether the always on display mode is available.-->
     <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool>
     <!-- Control whether the always on display mode is enabled by default.-->
     <bool name="config_dozeAlwaysOnEnabled">false</bool>
+    <!-- The radius of the enrollment progress bar, in dp -->
+    <integer name="config_udfpsEnrollProgressBar" translatable="false">139</integer>
+    <!-- Whether to play turbulence noise after clicking the play button -->
+    <bool name="config_turbulenceNoise">false</bool>
+    <!-- If not zero, limits the internal screen recorder's framerate to the set value. -->
+    <integer name="config_screenRecorderMaxFramerate">120</integer>
+    <!-- Whether to show min refresh rate in display settings -->
+    <bool name="config_show_min_refresh_rate_switch">true</bool>
 </resources>
