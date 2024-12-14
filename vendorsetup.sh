@@ -13,5 +13,5 @@ echo 'Cloning hardware xiaomi'
 git clone https://github.com/Ingres-stuff/hardware_xiaomi.git -b lineage-22 hardware/xiaomi
 
 echo 'Cloning ingres-kernel'
-git clone https://github.com/Ingres-Centre/android_device_xiaomi_ingres-kernel.git -b smgreborn device/xiaomi/ingres-kernel
+git clone https://github.com/skyres17/Kernel-Ingres device/xiaomi/ingres-kernel
 
