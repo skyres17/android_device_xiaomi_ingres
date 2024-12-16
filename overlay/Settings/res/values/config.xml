@@ -14,4 +14,10 @@
     <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool>
     <!-- Control whether the always on display mode is enabled by default.-->
     <bool name="config_dozeAlwaysOnEnabled">false</bool>
+    <!-- The radius of the enrollment progress bar, in dp -->
+    <integer name="config_udfpsEnrollProgressBar" translatable="false">139</integer>
+    <!-- Whether to play turbulence noise after clicking the play button -->
+    <bool name="config_turbulenceNoise">false</bool>
+    <!-- If not zero, limits the internal screen recorder's framerate to the set value. -->
+    <integer name="config_screenRecorderMaxFramerate">120</integer>
 </resources>
