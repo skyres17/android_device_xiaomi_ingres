@@ -2,7 +2,7 @@
 ro.miui.backdrop_sampling_enabled=true
 ro.config.low_ram.middle.threshold_gb=6
 ro.miui.has_real_blur=true
-ro.surface_flinger.supports_background_blur=1
+ro.surface_flinger.supports_background_blur=0
 sf.blurs_are_expensive=1
 
 # VSync and UI Optimizations
@@ -65,7 +65,6 @@ debug.hwui.skia_atrace_enabled=false
 
 # Backdrop and blur settings  
 ro.miui.backdrop_sampling_enabled=true  
-ro.surface_flinger.supports_background_blur=0  
 sf.blurs_are_expensive=1  
 
 # Low RAM threshold  
