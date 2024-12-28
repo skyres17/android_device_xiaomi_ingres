@@ -15,3 +15,6 @@ git clone https://github.com/Ingres-stuff/hardware_xiaomi.git -b lineage-21 hard
 echo 'Cloning ingres-kernel'
 git clone https://github.com/Ingres-Centre/android_device_xiaomi_ingres-kernel.git -b smgreborn device/xiaomi/ingres-kernel
 
+echo 'Cloning externals'
+git clone https://android.googlesource.com/platform/external/OpenCL-ICD-Loader external/OpenCL-ICD-Loader
+git clone https://android.googlesource.com/platform/external/OpenCL-Headers external/OpenCL-Headers
