@@ -13,6 +13,7 @@ include vendor/xiaomi/ingres/BoardConfigVendor.mk
 DEVICE_PATH := device/xiaomi/ingres
 
 # Audio
+AUDIO_FEATURE_ENABLED_CIRRUS_CALIBRATION_RESISTANCE := true
 AUDIO_FEATURE_ENABLED_ULTRASOUND_PROXIMITY := true
 
 # Properties
