@@ -15,7 +15,8 @@ PRODUCT_PACKAGES += \
     SettingsProviderResIngres \
     WifiResIngres \
     FrameworksResIngres \
-    SystemUIResIngres
+    SystemUIResIngres \
+    ApertureResIngres
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
