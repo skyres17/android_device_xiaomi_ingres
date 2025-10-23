@@ -16,4 +16,10 @@ PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := 21121210G
 
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    BuildDesc="ingres-user 14 UKQ1.240624.001 OS2.0.5.0.ULJCNXM release-keys" \
+    BuildFingerprint=Redmi/ingres/ingres:14/UKQ1.240624.001/OS2.0.5.0.ULJCNXM:user/release-keys \
+    DeviceProduct=ingres \
+    SystemName=ingres
+
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
