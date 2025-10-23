@@ -24,6 +24,10 @@ PRODUCT_PACKAGES += \
     SystemUIResIngres \
     ApertureResIngres
 
+# Powershare
+PRODUCT_PACKAGES += \
+    vendor.lineage.powershare-service.default
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
