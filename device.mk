@@ -22,7 +22,8 @@ PRODUCT_PACKAGES += \
     WifiResIngres \
     FrameworksResIngres \
     SystemUIResIngres \
-    ApertureResIngres
+    ApertureResIngres \
+    NfcResIngres
 
 # Powershare
 PRODUCT_PACKAGES += \
