@@ -13,7 +13,8 @@ $(call inherit-product, vendor/xiaomi/ingres/ingres-vendor.mk)
 # Overlay
 PRODUCT_PACKAGES += \
     SettingsProviderResIngres \
-    WifiResIngres
+    WifiResIngres \
+    FrameworksResIngres
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
