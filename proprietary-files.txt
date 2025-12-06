@@ -94,6 +94,10 @@ vendor/firmware/TL-cs35l41-dsp1-spk-prot.bin
 vendor/firmware/TL-handfree.txt
 vendor/firmware/TL-handset.txt
 vendor/firmware/TL-music.txt
+vendor/firmware/cs35l41-dsp1-spk-cali.wmfw
+vendor/firmware/cs35l41-dsp1-spk-prot.wmfw
+
+# Awinic LEDs firmware
 vendor/firmware/aw22xxx_cfg_audio_flower.bin
 vendor/firmware/aw22xxx_cfg_audio_skyline.bin
 vendor/firmware/aw22xxx_cfg_led_blue_13.bin
@@ -114,8 +118,6 @@ vendor/firmware/aw22xxx_cfg_led_red_on.bin
 vendor/firmware/aw22xxx_cfg_led_skyline.bin
 vendor/firmware/aw22xxx_cfg_led_yellow_on.bin
 vendor/firmware/aw22xxx_fw.bin
-vendor/firmware/cs35l41-dsp1-spk-cali.wmfw
-vendor/firmware/cs35l41-dsp1-spk-prot.wmfw
 
 # Batterysecret
 vendor/bin/batterysecret
