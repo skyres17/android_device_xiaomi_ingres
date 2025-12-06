@@ -31,7 +31,6 @@ vendor/lib/rfsa/adsp/libDspIOProxy_skel.so
 vendor/lib/rfsa/adsp/libMIAIHDR_skel.so
 vendor/lib/rfsa/adsp/libQ6MSFR_manager_skel.so
 vendor/lib/rfsa/adsp/libQnnHtpAltPrepSkel.so
-
 vendor/lib/rfsa/adsp/libQnnHtpAltPrepV69Skel.so
 vendor/lib/rfsa/adsp/libQnnHtpV69.so
 vendor/lib/rfsa/adsp/libSnpeHtpV69Skel.so
@@ -547,6 +546,7 @@ vendor/lib64/camera/fdconfigpreview.bin
 vendor/lib64/camera/fdconfigpreviewlite.bin
 vendor/lib64/camera/fdconfigvideo.bin
 vendor/lib64/camera/fdconfigvideolite.bin
+vendor/lib64/camera/libQnnHtpAltPrepV69Skel.so;MODULE_SUFFIX=_camera
 vendor/lib64/camera/libQnnHtpAltPrepV69Stub.so;MODULE_SUFFIX=-camera
 vendor/lib64/camera/plugins/com.xiaomi.plugin.anchor.so
 vendor/lib64/camera/plugins/com.xiaomi.plugin.arcsoftsll.so
