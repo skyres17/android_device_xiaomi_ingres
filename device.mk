@@ -43,7 +43,6 @@ PRODUCT_PACKAGES += \
     vendor.lineage.leds-service.default \
     Leds
 
-
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
