@@ -13,6 +13,9 @@ $(call inherit-product, vendor/xiaomi/ingres/ingres-vendor.mk)
 # Inherit Miui Camera
 $(call inherit-product-if-exists, device/xiaomi/miuicamera-ingres/device.mk)
 
+# Dolby Atmos
+$(call inherit-product-if-exists, hardware/dolby/dolby.mk)
+
 # Audio configs
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/mixer_paths_waipio_mtp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_taro/mixer_paths_waipio_mtp.xml \
