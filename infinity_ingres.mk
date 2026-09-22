@@ -10,6 +10,9 @@ $(call inherit-product, device/xiaomi/ingres/device.mk)
 # Inherit from common lineage configuration
 $(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
+# Inherit Dolby configuration
+$(call inherit-product, hardware/dolby/dolby.mk)
+
 PRODUCT_NAME := infinity_ingres
 PRODUCT_DEVICE := ingres
 PRODUCT_MANUFACTURER := Xiaomi
