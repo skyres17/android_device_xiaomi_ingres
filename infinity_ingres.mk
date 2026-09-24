@@ -13,6 +13,13 @@ $(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 # Inherit Dolby configuration
 $(call inherit-product, hardware/dolby/dolby.mk)
 
+# InfinityX
+TARGET_DISABLE_EPPE := true
+INFINITY_BUILD_TYPE := UNOFFICIAL
+INFINITY_MAINTAINER := "RafaelGH"
+TARGET_HAS_UDFPS := false
+WITH_GAPPS := true
+
 PRODUCT_NAME := infinity_ingres
 PRODUCT_DEVICE := ingres
 PRODUCT_MANUFACTURER := Xiaomi
